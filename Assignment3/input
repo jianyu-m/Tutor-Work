@@ -1,0 +1,8 @@
+create profile 300303 max 13240
+create profile 599503 dskf 12904
+create grade 300303 comp2123A 90
+create grade 599503 comp2123B 80
+create grade 599503 comp2123A 70
+display profile
+delete profile 599503
+display grade comp2123A
