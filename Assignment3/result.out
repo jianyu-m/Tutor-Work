@@ -1,6 +1,0 @@
-In file included from sequence_main.cpp:3:0:
-sequence.h: In instantiation of ‘std::ostream& operator<<(std::ostream&, std::vector<Sequence<T> >) [with T = int; std::ostream = std::basic_ostream<char>]’:
-sequence_main.cpp:17:11:   required from here
-sequence.h:36:33: error: conversion from ‘std::vector<Sequence<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const Sequence<int>*, std::vector<Sequence<int> > >}’ to non-scalar type ‘itr_type {aka __gnu_cxx::__normal_iterator<Sequence<int>*, std::vector<Sequence<int> > >}’ requested
-   for (itr_type itr = seq.begin();itr != seq.end();
-                                 ^
