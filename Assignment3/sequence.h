@@ -32,8 +32,8 @@ ostream& operator<<(ostream& out, const Sequence<T>& seq) {
 
 template <typename T>
 ostream& operator<<(ostream& out, const std::vector<Sequence<T>> seq) {
-  typedef typename std::vector<Sequence<T>>::iterator itr_type;
-  for (itr_type itr = seq.begin();itr != seq.end();
+  typename std::vector<Sequence<T>>::const_iterator itr;
+  for (itr = seq.begin();itr != seq.end();
         itr++) {
           cout << *itr;
         }
