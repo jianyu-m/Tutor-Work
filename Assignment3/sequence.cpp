@@ -38,6 +38,6 @@ bool seq_comp(Sequence<T>& a, Sequence<T>& b){
 }
 
 template <typename T>
-void sort_list(vector<Sequence<T>> &seq) {
+void sort_list(vector<Sequence<T>>& seq) {
   sort(seq.begin(), seq.end(), seq_comp);
 }

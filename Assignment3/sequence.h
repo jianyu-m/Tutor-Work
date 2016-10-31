@@ -16,12 +16,12 @@ public:
   
   template <typename U>
   friend ostream& operator<<(ostream& out, const Sequence<U>& seq);
-  
-  template <typename U>
-  friend ostream& operator<<(ostream& out, const const std::vector<Sequence<U>>& seq);
-  
-  template <typename U>
-  friend sort_list(vector<Sequence<U>>& seq);
 };
+
+template <typename T>
+ostream& operator<<(ostream& out, const std::vector<Sequence<T>>& seq);
+
+template <typename T>
+void sort_list(vector<Sequence<T>>& seq);
 
 /* Other Neccessary Defination Here */
